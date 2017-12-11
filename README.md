@@ -96,6 +96,7 @@ of version 1.5.4 is quite straightforward:
 	./configure --prefix=/usr --enable-openssl
 	make shared_library && sudo make install
 
+########shuiqin libsrtp-2.0.0安装######
 The instructions for version 2.0.0 is practically the same:
 
 	wget https://github.com/cisco/libsrtp/archive/v2.0.0.tar.gz
@@ -241,7 +242,7 @@ usual to start the whole compilation process:
 
 	./configure --prefix=/opt/janus
 	make
-	make install
+	make install   // sudo make install
 
 Since Janus requires configuration files for both the core and its
 modules in order to work, you'll probably also want to install the
@@ -378,6 +379,10 @@ Options passed through the command line have the precedence on those
 specified in the configuration file. To start the gateway, simply run:
 
 	<installdir>/bin/janus
+
+	##shuiqin 跑janus命令###
+	sudo  ./opt/janus/bin/janus
+	##shuiqin 跑janus命令###
 
 This will start the gateway, and have it look at the configuration file.
 
