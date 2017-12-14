@@ -13,7 +13,7 @@
 [general]
 json = indented				; Whether the JSON messages should be indented (default),
 							; plain (no indentation) or compact (no indentation and no spaces)
-base_path = /janus			; Base path to bind to in the web server (plain HTTP only)
+base_path = /mediaserver			; Base path to bind to in the web server (plain HTTP only)
 threads = unlimited			; unlimited=thread per connection, number=thread pool
 http = yes					; Whether to enable the plain HTTP interface
 port = 8088					; Web server HTTP port
